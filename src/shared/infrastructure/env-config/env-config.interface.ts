@@ -1,4 +1,6 @@
+export type environment = 'test' | 'development' | 'production' | 'staging';
+
 export interface EnvConfig {
   getAppPort(): number;
-  getNodeEnv(): 'test' | 'development' | 'production' | 'staging';
+  getNodeEnv(): environment;
 }
